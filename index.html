@@ -114,6 +114,11 @@ Contáctame:
         }
 
     </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Experiencia romántica interactiva para San Valentín" />
+  <title>Nuestro 24 💖</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -147,6 +152,77 @@ Contáctame:
         }
     </script>
 
+  <main class="app" id="app">
+    <section class="panel panel--active" id="lock-screen" aria-labelledby="lock-title">
+      <p class="eyebrow">Solo para tu persona favorita</p>
+      <h1 id="lock-title">Desbloquea este detalle ✨</h1>
+      <p class="hint">Pista: nuestra fecha especial (día 24).</p>
+      <form id="lock-form" class="lock-form" autocomplete="off">
+        <label for="password" class="sr-only">Contraseña</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          inputmode="numeric"
+          placeholder="Escribe la contraseña"
+          maxlength="4"
+          required
+        />
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="lock-error" class="error" role="alert" aria-live="polite"></p>
+    </section>
+
+    <section class="panel" id="story-screen" aria-live="polite">
+      <div class="slides">
+        <article class="slide slide--active">
+          <p>Esto no es para cualquiera.</p>
+          <p>Es para alguien muy especial.</p>
+        </article>
+        <article class="slide">
+          <p>Hola, Amochita 💌</p>
+          <p>Hoy quise dejarte un rincón solo nuestro.</p>
+        </article>
+        <article class="slide">
+          <p>Incluso cuando andas en modo hater,</p>
+          <p>siempre se te nota el amor.</p>
+        </article>
+        <article class="slide">
+          <p>No tienes que cambiar nada.</p>
+          <p>Ser tú ya es mi parte favorita.</p>
+        </article>
+        <article class="slide letter-slide">
+          <div class="letter-card">
+            <img src="carta.png" alt="Carta romántica" class="letter-image" />
+            <div class="letter-text">
+              <p>
+                Gracias por hacer que cada día tenga algo bonito.
+                Te elegiría una y mil veces, en noviembre, en febrero y siempre.
+              </p>
+              <p class="signature">Con cariño, Rafaella 🤍</p>
+            </div>
+          </div>
+        </article>
+        <article class="slide final-slide">
+          <div class="heart-row" aria-label="Iniciales en corazones">
+            <div class="initial-heart" title="J">
+              <span>J</span>
+            </div>
+            <div class="initial-heart" title="R">
+              <span>R</span>
+            </div>
+          </div>
+          <p class="final-message">Te amo mucho pero mucho, que esto es lo mínimo y no es mucho.</p>
+        </article>
+      </div>
+      <div class="controls">
+        <div id="progress" class="progress" aria-hidden="true"></div>
+        <button id="next-btn" type="button">Seguir</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
  <!-- 
