@@ -116,7 +116,7 @@ Contáctame:
     </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Experiencia romántica interactiva para San Valentín" />
+  <meta name="description" content="Carta interactiva romántica para San Valentín" />
   <title>Nuestro 24 💖</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -130,6 +130,32 @@ Contáctame:
         <div class="card-container">
             <img src="carta.png" alt="Carta" class="carta-img">
             <img src="flores.gif" alt="Flores" class="flores-img">
+  <main class="app" id="app">
+    <section class="panel panel--active" id="intro-screen" aria-labelledby="intro-title">
+      <p class="eyebrow">Una sorpresa hecha con amor</p>
+      <h1 id="intro-title">Tócame para comenzar 💘</h1>
+
+      <button id="heart-trigger" class="heart-trigger" type="button" aria-label="Abrir pregunta de San Valentín">
+        <span class="heart-core">¿Quieres ser mi San Valentín?</span>
+        <span class="bears" aria-hidden="true">🧸💕🧸</span>
+      </button>
+
+      <p class="mini-note">Pista: dentro hay una cartita especial para ti.</p>
+    </section>
+
+    <section class="panel mission-panel" id="ask-screen" aria-labelledby="ask-title">
+      <p class="eyebrow">Misión secreta para Amochita ✨</p>
+      <h2 id="ask-title">¿Aceptas la misión de ser mi San Valentín?</h2>
+      <p class="hint">Spoiler: la respuesta correcta desbloquea una carta personalizada 🧸💌</p>
+
+      <div class="mission-board" id="ask-actions">
+        <span class="sticker sticker-star" aria-hidden="true">⭐</span>
+        <span class="sticker sticker-bear-left" aria-hidden="true">🧸</span>
+        <span class="sticker sticker-bear-right" aria-hidden="true">🧸</span>
+        <span class="sticker sticker-crown" aria-hidden="true">👑</span>
+
+        <div class="mission-envelope" aria-hidden="true">
+          <span class="envelope-seal">💖</span>
         </div>
         <img src="love.gif" alt="Love" class="love-img">
     </div>
@@ -152,10 +178,17 @@ Contáctame:
         }
     </script>
 
-  <main class="app" id="app">
-    <section class="panel panel--active" id="lock-screen" aria-labelledby="lock-title">
+        <div class="mission-actions">
+          <button id="yes-btn" type="button">✓ Yes, mi reina</button>
+          <button id="no-btn" class="ghost-btn" type="button">✗ No</button>
+        </div>
+      </div>
+      <p class="tiny-joke">(Prometo cero drama nivel Rey George III... puro amor 💂‍♂️💗)</p>
+    </section>
+
+    <section class="panel" id="lock-screen" aria-labelledby="lock-title">
       <p class="eyebrow">Solo para tu persona favorita</p>
-      <h1 id="lock-title">Desbloquea este detalle ✨</h1>
+      <h2 id="lock-title">Desbloquea este detalle ✨</h2>
       <p class="hint">Pista: nuestra fecha especial (día 24).</p>
       <form id="lock-form" class="lock-form" autocomplete="off">
         <label for="password" class="sr-only">Contraseña</label>
@@ -180,7 +213,7 @@ Contáctame:
           <p>Es para alguien muy especial.</p>
         </article>
         <article class="slide">
-          <p>Hola, Amochita 💌</p>
+          <p>Hola, mi amor 💌</p>
           <p>Hoy quise dejarte un rincón solo nuestro.</p>
         </article>
         <article class="slide">
@@ -196,23 +229,23 @@ Contáctame:
             <img src="carta.png" alt="Carta romántica" class="letter-image" />
             <div class="letter-text">
               <p>
-                Gracias por hacer que cada día tenga algo bonito.
-                Te elegiría una y mil veces, en noviembre, en febrero y siempre.
+                Te amo mucho pero mucho, que esto es lo mínimo y no es mucho.
+                Gracias por existir, por tu forma de amar y por hacerme sentir en casa.
               </p>
-              <p class="signature">Con cariño, Rafaella 🤍</p>
+              <p class="signature">Con cariño infinito 🤍</p>
             </div>
           </div>
+          <footer class="letter-footer">
+            <p><strong>Para:</strong> el amor de mi vida</p>
+            <p><strong>De:</strong> Tu admirador secreto</p>
+          </footer>
         </article>
         <article class="slide final-slide">
           <div class="heart-row" aria-label="Iniciales en corazones">
-            <div class="initial-heart" title="J">
-              <span>J</span>
-            </div>
-            <div class="initial-heart" title="R">
-              <span>R</span>
-            </div>
+            <div class="initial-heart" title="J"><span>J</span></div>
+            <div class="initial-heart" title="R"><span>R</span></div>
           </div>
-          <p class="final-message">Te amo mucho pero mucho, que esto es lo mínimo y no es mucho.</p>
+          <p class="final-message">Feliz San Valentín, mi vida. 🌹</p>
         </article>
       </div>
       <div class="controls">
@@ -246,4 +279,5 @@ Contáctame:
 
 -->
 
+</html>
 </html>
