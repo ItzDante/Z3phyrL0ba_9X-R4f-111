@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti By AlexDev</title>
+
+     <!-- 
+
+Contáctame:
+
+    * Invitame un café
+ https://buymeacoffee.com/alexx.dev
+
+    * Portafolio Web
+ https://alexxdev.vercel.app
+
+    * Sigueme en tiktok
+ https://www.tiktok.com/@alexx.dev?is_from_webapp=1&sender_device=pc 
+ 
+    *Canal de WhatsApp
+ https://whatsapp.com/channel/0029VazQEXq90x2vIdNkrH1p
+
+ 
+ WhatsApp: +52 1 55 6628 1018
+
+-->
+ 
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; 
+            font-family: 'Arial', sans-serif;
+        }
+
+        #screen1 {
+            width: 100%;
+            height: 100vh;
+            background-image: url('fondo.png');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: opacity 1s ease;
+        }
+
+        .heart-btn {
+            cursor: pointer;
+            width: 850px; 
+            transition: transform 0.3s ease;
+            animation: latido 1.5s infinite; 
+        }
+
+        .heart-btn:hover {
+            transform: scale(1.1); 
+        }
+
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+        #screen2 {
+            display: none; 
+            width: 100%;
+            height: 100vh;
+            background-color: #ff90b8; 
+            position: relative; 
+            
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0; 
+            transition: opacity 1s ease;
+        }
+
+        .card-container {
+            position: relative;
+            width: auto;
+            max-width: 90%;
+            text-align: center;
+            margin-right: 200px; 
+        }
+
+        .carta-img {
+            max-width: 100%;
+            max-height: 70vh; 
+            border-radius: 10px;
+            margin-right: 250px !important;        }
+
+        .flores-img {
+            position: absolute;
+            bottom: -35px; 
+            right: 250px; 
+            width: 380px; 
+            z-index: 10; 
+        }
+
+        .love-img {
+            position: absolute; 
+            right: 300px;       
+            bottom: 340px;      
+            width: 600px;      
+            height: auto;
+            z-index: 5;       
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="screen1">
+        <img src="heart.gif" alt="Corazón" class="heart-btn" onclick="goToLetter()">
+    </div>
+
+    <div id="screen2">        
+        <div class="card-container">
+            <img src="carta.png" alt="Carta" class="carta-img">
+            <img src="flores.gif" alt="Flores" class="flores-img">
+        </div>
+        <img src="love.gif" alt="Love" class="love-img">
+    </div>
+
+    <script>
+        function goToLetter() {
+            const screen1 = document.getElementById('screen1');
+            const screen2 = document.getElementById('screen2');
+
+            screen1.style.opacity = '0';
+
+            setTimeout(() => {
+                screen1.style.display = 'none';
+                screen2.style.display = 'flex';
+                
+                setTimeout(() => {
+                    screen2.style.opacity = '1';
+                }, 50);
+            }, 1000); 
+        }
+    </script>
+
+</body>
+
+ <!-- 
+
+Contáctame:
+
+    * Invitame un café
+ https://buymeacoffee.com/alexx.dev
+
+    * Portafolio Web
+ https://alexxdev.vercel.app
+
+    * Sigueme en tiktok
+ https://www.tiktok.com/@alexx.dev?is_from_webapp=1&sender_device=pc 
+ 
+    *Canal de WhatsApp
+ https://whatsapp.com/channel/0029VazQEXq90x2vIdNkrH1p
+
+ 
+ WhatsApp: +52 1 55 6628 1018
+
+-->
+
+</html>
