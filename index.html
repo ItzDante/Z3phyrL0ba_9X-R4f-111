@@ -1,173 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Ti By AlexDev</title>
-
-     <!-- 
-
-Contáctame:
-
-    * Invitame un café
- https://buymeacoffee.com/alexx.dev
-
-    * Portafolio Web
- https://alexxdev.vercel.app
-
-    * Sigueme en tiktok
- https://www.tiktok.com/@alexx.dev?is_from_webapp=1&sender_device=pc 
- 
-    *Canal de WhatsApp
- https://whatsapp.com/channel/0029VazQEXq90x2vIdNkrH1p
-
- 
- WhatsApp: +52 1 55 6628 1018
-
--->
- 
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden; 
-            font-family: 'Arial', sans-serif;
-        }
-
-        #screen1 {
-            width: 100%;
-            height: 100vh;
-            background-image: url('fondo.png');
-            background-size: cover; 
-            background-position: center;
-            background-repeat: no-repeat;
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            transition: opacity 1s ease;
-        }
-
-        .heart-btn {
-            cursor: pointer;
-            width: 850px; 
-            transition: transform 0.3s ease;
-            animation: latido 1.5s infinite; 
-        }
-
-        .heart-btn:hover {
-            transform: scale(1.1); 
-        }
-
-        @keyframes latido {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.15); }
-            100% { transform: scale(1); }
-        }
-
-        #screen2 {
-            display: none; 
-            width: 100%;
-            height: 100vh;
-            background-color: #ff90b8; 
-            position: relative; 
-            
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            opacity: 0; 
-            transition: opacity 1s ease;
-        }
-
-        .card-container {
-            position: relative;
-            width: auto;
-            max-width: 90%;
-            text-align: center;
-            margin-right: 200px; 
-        }
-
-        .carta-img {
-            max-width: 100%;
-            max-height: 70vh; 
-            border-radius: 10px;
-            margin-right: 250px !important;        }
-
-        .flores-img {
-            position: absolute;
-            bottom: -35px; 
-            right: 250px; 
-            width: 380px; 
-            z-index: 10; 
-        }
-
-        .love-img {
-            position: absolute; 
-            right: 300px;       
-            bottom: 340px;      
-            width: 600px;      
-            height: auto;
-            z-index: 5;       
-        }
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Experiencia romántica interactiva para San Valentín" />
+  <title>Nuestro 24 💖</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <main class="app" id="app">
+    <section class="panel panel--active" id="lock-screen" aria-labelledby="lock-title">
+      <p class="eyebrow">Solo para tu persona favorita</p>
+      <h1 id="lock-title">Desbloquea este detalle ✨</h1>
+      <p class="hint">Pista: nuestra fecha especial (día 24).</p>
+      <form id="lock-form" class="lock-form" autocomplete="off">
+        <label for="password" class="sr-only">Contraseña</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          inputmode="numeric"
+          placeholder="Escribe la contraseña"
+          maxlength="4"
+          required
+        />
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="lock-error" class="error" role="alert" aria-live="polite"></p>
+    </section>
 
-    <div id="screen1">
-        <img src="heart.gif" alt="Corazón" class="heart-btn" onclick="goToLetter()">
-    </div>
+    <section class="panel" id="story-screen" aria-live="polite">
+      <div class="slides">
+        <article class="slide slide--active">
+          <p>Esto no es para cualquiera.</p>
+          <p>Es para alguien muy especial.</p>
+        </article>
+        <article class="slide">
+          <p>Hola, Amochita 💌</p>
+          <p>Hoy quise dejarte un rincón solo nuestro.</p>
+        </article>
+        <article class="slide">
+          <p>Incluso cuando andas en modo hater,</p>
+          <p>siempre se te nota el amor.</p>
+        </article>
+        <article class="slide">
+          <p>No tienes que cambiar nada.</p>
+          <p>Ser tú ya es mi parte favorita.</p>
+        </article>
+        <article class="slide letter-slide">
+          <div class="letter-card">
+            <img src="carta.png" alt="Carta romántica" class="letter-image" />
+            <div class="letter-text">
+              <p>
+                Gracias por hacer que cada día tenga algo bonito.
+                Te elegiría una y mil veces, en noviembre, en febrero y siempre.
+              </p>
+              <p class="signature">Con cariño, Rafaella 🤍</p>
+            </div>
+          </div>
+        </article>
+        <article class="slide final-slide">
+          <div class="heart-row" aria-label="Iniciales en corazones">
+            <div class="initial-heart" title="J">
+              <span>J</span>
+            </div>
+            <div class="initial-heart" title="R">
+              <span>R</span>
+            </div>
+          </div>
+          <p class="final-message">Te amo mucho pero mucho, que esto es lo mínimo y no es mucho.</p>
+        </article>
+      </div>
+      <div class="controls">
+        <div id="progress" class="progress" aria-hidden="true"></div>
+        <button id="next-btn" type="button">Seguir</button>
+      </div>
+    </section>
+  </main>
 
-    <div id="screen2">        
-        <div class="card-container">
-            <img src="carta.png" alt="Carta" class="carta-img">
-            <img src="flores.gif" alt="Flores" class="flores-img">
-        </div>
-        <img src="love.gif" alt="Love" class="love-img">
-    </div>
-
-    <script>
-        function goToLetter() {
-            const screen1 = document.getElementById('screen1');
-            const screen2 = document.getElementById('screen2');
-
-            screen1.style.opacity = '0';
-
-            setTimeout(() => {
-                screen1.style.display = 'none';
-                screen2.style.display = 'flex';
-                
-                setTimeout(() => {
-                    screen2.style.opacity = '1';
-                }, 50);
-            }, 1000); 
-        }
-    </script>
-
+  <script src="script.js"></script>
 </body>
-
- <!-- 
-
-Contáctame:
-
-    * Invitame un café
- https://buymeacoffee.com/alexx.dev
-
-    * Portafolio Web
- https://alexxdev.vercel.app
-
-    * Sigueme en tiktok
- https://www.tiktok.com/@alexx.dev?is_from_webapp=1&sender_device=pc 
- 
-    *Canal de WhatsApp
- https://whatsapp.com/channel/0029VazQEXq90x2vIdNkrH1p
-
- 
- WhatsApp: +52 1 55 6628 1018
-
--->
-
 </html>

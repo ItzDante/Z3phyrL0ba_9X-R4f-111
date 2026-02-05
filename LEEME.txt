@@ -1,38 +1,14 @@
-=======================================
-  LEEME: INSTRUCCIONES IMPORTANTES
-=======================================
+LEEME
 
-¡Hola! Gracias por tu interés en este código de amor. Para que tu experiencia sea la mejor, por favor lee las siguientes opciones:
+Proyecto web romántico hecho con HTML, CSS y JavaScript.
 
----------------------------------------------------------------------
+USO
+1) Abrir index.html en el navegador.
+2) Ingresar contraseña: 24 o 2411.
+3) Recorrer la experiencia.
 
-OPCION 1: PARA QUIENES SABEN PROGRAMAR
---------------------------------------
-Este es un proyecto web que utiliza HTML, CSS y JavaScript.
-
-1. Descomprime el archivo .zip que descargaste.
-2. Edita el contenido (textos, imágenes, etc.) directamente en los archivos (.html, .css y .js) con un editor de código como Visual Studio Code.
-3. Sube la carpeta con todos los archivos a un servicio de hosting para generar un link y poder compartirlo.
-
-¡OJO! Esta opción REQUIERE CONOCIMIENTOS BÁSICOS de programación para personalizar y subir los archivos a internet.
-
----------------------------------------------------------------------
-
-OPCION 2: ¡YO LO PERSONALIZO POR TI CON LA MEMBRESÍA!
-------------------------------------------------------
-¿No sabes programar? ¡No te preocupes! Con la membresía de personalización, yo hago todo el trabajo por ti.
-
-✅ Personalizo el código con tus fotos, nombres, fechas y mensajes.
-✅ Lo subo a internet para que funcione online.
-✅ Te entrego un link único, listo para que lo compartas.
-
-👇 ¡Haz clic abajo para ir a la membresía y empezar! 👇
-
-[https://buymeacoffee.com/alexx.dev/membership]
-
-¿Tienes alguna pregunta antes de decidirte? ¡Escríbeme sin compromiso!
-
-== Contacto para dudas ==
-
-WhatsApp: +52 1 55 6628 1018
-Link directo: https://wa.me/5215566281018
+ARCHIVOS PRINCIPALES
+- index.html
+- style.css
+- script.js
+- README.md
