@@ -1,38 +1,29 @@
-=======================================
-  LEEME: INSTRUCCIONES IMPORTANTES
-=======================================
+# Amochita Experience 💘
 
-¡Hola! Gracias por tu interés en este código de amor. Para que tu experiencia sea la mejor, por favor lee las siguientes opciones:
+Mini experiencia web romántica con contraseña para compartir en San Valentín.
 
----------------------------------------------------------------------
+## Contraseña
+- `24` (día especial)
+- `2411` (24 de noviembre)
 
-OPCION 1: PARA QUIENES SABEN PROGRAMAR
---------------------------------------
-Este es un proyecto web que utiliza HTML, CSS y JavaScript.
+## Cómo abrirlo
+Solo abre `index.html` en el navegador.
 
-1. Descomprime el archivo .zip que descargaste.
-2. Edita el contenido (textos, imágenes, etc.) directamente en los archivos (.html, .css y .js) con un editor de código como Visual Studio Code.
-3. Sube la carpeta con todos los archivos a un servicio de hosting para generar un link y poder compartirlo.
+## Subirlo a tu repositorio de GitHub
+1. Crea un repo vacío en GitHub.
+2. Conecta este proyecto como remoto:
+   ```bash
+   git remote add origin <URL_DE_TU_REPO>
+   ```
+3. Sube la rama actual:
+   ```bash
+   git push -u origin work
+   ```
 
-¡OJO! Esta opción REQUIERE CONOCIMIENTOS BÁSICOS de programación para personalizar y subir los archivos a internet.
+## Nota sobre `+422 -231`
+Eso no son errores del código. En GitHub, esos números indican líneas **agregadas** (`+`) y **eliminadas** (`-`) en el historial de cambios.
 
----------------------------------------------------------------------
-
-OPCION 2: ¡YO LO PERSONALIZO POR TI CON LA MEMBRESÍA!
-------------------------------------------------------
-¿No sabes programar? ¡No te preocupes! Con la membresía de personalización, yo hago todo el trabajo por ti.
-
-✅ Personalizo el código con tus fotos, nombres, fechas y mensajes.
-✅ Lo subo a internet para que funcione online.
-✅ Te entrego un link único, listo para que lo compartas.
-
-👇 ¡Haz clic abajo para ir a la membresía y empezar! 👇
-
-[https://buymeacoffee.com/alexx.dev/membership]
-
-¿Tienes alguna pregunta antes de decidirte? ¡Escríbeme sin compromiso!
-
-== Contacto para dudas ==
-
-WhatsApp: +52 1 55 6628 1018
-Link directo: https://wa.me/5215566281018
+## Personalización rápida
+Puedes editar textos en `index.html` y estilos en `style.css`.
+index.html
+index.html
