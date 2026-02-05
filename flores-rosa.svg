@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#7a112f"/>
+      <stop offset="100%" stop-color="#3d0819"/>
+    </radialGradient>
+    <g id="flower">
+      <ellipse cx="0" cy="-52" rx="25" ry="42" fill="#ff8cc4"/>
+      <ellipse cx="36" cy="-36" rx="25" ry="42" fill="#ff9bd0" transform="rotate(35)"/>
+      <ellipse cx="52" cy="0" rx="25" ry="42" fill="#ff8cc4" transform="rotate(80)"/>
+      <ellipse cx="36" cy="36" rx="25" ry="42" fill="#ff9bd0" transform="rotate(125)"/>
+      <ellipse cx="0" cy="52" rx="25" ry="42" fill="#ff8cc4" transform="rotate(180)"/>
+      <ellipse cx="-36" cy="36" rx="25" ry="42" fill="#ff9bd0" transform="rotate(235)"/>
+      <ellipse cx="-52" cy="0" rx="25" ry="42" fill="#ff8cc4" transform="rotate(280)"/>
+      <ellipse cx="-36" cy="-36" rx="25" ry="42" fill="#ff9bd0" transform="rotate(325)"/>
+      <circle cx="0" cy="0" r="24" fill="#5a172e"/>
+    </g>
+  </defs>
+  <rect width="900" height="900" fill="url(#bg)"/>
+  <g stroke="#4f8e43" stroke-width="12" stroke-linecap="round">
+    <line x1="450" y1="760" x2="260" y2="360"/>
+    <line x1="450" y1="760" x2="340" y2="290"/>
+    <line x1="450" y1="760" x2="430" y2="350"/>
+    <line x1="450" y1="760" x2="520" y2="290"/>
+    <line x1="450" y1="760" x2="620" y2="360"/>
+    <line x1="450" y1="760" x2="350" y2="450"/>
+    <line x1="450" y1="760" x2="540" y2="450"/>
+    <line x1="450" y1="760" x2="450" y2="250"/>
+  </g>
+  <g fill="#6ead55" opacity="0.9">
+    <ellipse cx="350" cy="610" rx="56" ry="25"/>
+    <ellipse cx="540" cy="600" rx="56" ry="25"/>
+    <ellipse cx="300" cy="690" rx="62" ry="28"/>
+    <ellipse cx="600" cy="700" rx="62" ry="28"/>
+  </g>
+  <g transform="translate(260 360)"><use href="#flower"/></g>
+  <g transform="translate(340 290)"><use href="#flower"/></g>
+  <g transform="translate(430 350)"><use href="#flower"/></g>
+  <g transform="translate(520 290)"><use href="#flower"/></g>
+  <g transform="translate(620 360)"><use href="#flower"/></g>
+  <g transform="translate(350 450)"><use href="#flower"/></g>
+  <g transform="translate(540 450)"><use href="#flower"/></g>
+  <g transform="translate(450 250)"><use href="#flower"/></g>
+</svg>
